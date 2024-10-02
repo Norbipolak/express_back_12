@@ -1,0 +1,28 @@
+<div class="container">
+    <form method="POST" class="box" action="" >
+        <h3>Termék kategória</h3>
+        <select name="productCategory">
+            <option value="0">Válassz kategóriát</option>
+            <% categories.forEach((c)=> { %>
+                <option><%=c.categoryName%></option>
+            <% })%>
+        </select>
+
+        <h3>Termék cím</h3>
+        <input type="text" name="title">
+
+        <h3>Termék név</h3>
+        <input type="text" name="productName">
+
+        <h3>Ár</h3>
+        <input type="number" name="price">
+
+        <h3>Diszkont ár</h3>
+        <input type="number" name="discountPrice">
+
+        <h3>Termék leírás</h3>
+        <textarea name="productDesc"></textarea>
+
+        <button>Küldés</button>
+    </form>
+</div>
